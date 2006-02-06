@@ -1,0 +1,15 @@
+# http://module-build.sourceforge.net/META-spec.html
+#XXXXXXX This is a prototype!!!  It will change in the future!!! XXXXX#
+name:         Mac-Tie-PList
+version:      0.01
+version_from: lib/Mac/Tie/PList.pm
+installdirs:  site
+requires:
+    Carp:                          1.03
+    Foundation:                    1
+    Tie::Array:                    1.03
+    Tie::Hash:                     1.01
+    Tie::Scalar:                   1
+
+distribution_type: module
+generated_by: ExtUtils::MakeMaker version 6.17
