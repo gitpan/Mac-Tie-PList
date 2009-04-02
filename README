@@ -1,4 +1,4 @@
-Mac-Tie-PList version 0.01
+Mac-Tie-PList version 0.02
 =================================
 
 This module allows easy parsing of Apple PList (NSDictionary) objects, as
@@ -27,7 +27,7 @@ modules shipped with Apple Perl distributions.
 
 COPYRIGHT AND LICENCE
 
-Copyright (C) 2006 by Gavin Brock
+Copyright (C) 2006-2009 by Gavin Brock
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself, either Perl version 5.8.6 or,

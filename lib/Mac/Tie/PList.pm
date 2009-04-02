@@ -1,7 +1,7 @@
 #==============================================================================a#
 
 package Mac::Tie::PList;
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 #==============================================================================a#
 
@@ -29,7 +29,7 @@ formats are currently supported.
 
 The objects are mapped as follows:
 
-	NSCFNumber NSCFBoolean NSCFString => perl tied scalar
+	NSNumber NSBoolean NSString => perl tied scalar
 	NSArray => perl tied array
 	NSDictionary => perl tied hash
 	NSDate => perl tied string - returns seconds since 1970
@@ -95,7 +95,7 @@ sub _tie_plist {
 		($plist_obj->isKindOfClass_(NSCFNumber->class)) ||
 		($plist_obj->isKindOfClass_(NSCFBoolean->class)) ||
 		($plist_obj->isKindOfClass_(NSCFData->class)) ||
-		($plist_obj->isKindOfClass_(NSCFDate->class)) ||
+		($plist_obj->isKindOfClass_(NSDate->class)) ||
 		($plist_obj->isKindOfClass_(NSCFString->class)) 
 	) {
 		tie my $plist, 'Mac::Tie::PList::Scalar', $plist_obj;
