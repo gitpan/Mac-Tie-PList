@@ -18,5 +18,5 @@ WriteMakefile(
     },
     ($] >= 5.005 ?     ## Add these new keywords supported since 5.005
       (ABSTRACT_FROM  => 'lib/Mac/Tie/PList.pm', # retrieve abstract from module
-       AUTHOR         => 'Gavin <gavin@apple.com>') : ()),
+       AUTHOR         => 'Gavin Brock <gbrock@cpan.org>') : ()),
 );
